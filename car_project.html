@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Truck</title>
+    <style type="text/css" media="screen">
+        body{
+            height: 100vh;   <!-- -->
+            position: relative;
+            margin: 0px;
+        }
+        .tire{
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            border-radius: 50%;
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            z-index: 3;  
+            box-shadow: 2px 5px #888888;          
+        }
+        .rim{
+            position: absolute;
+            top: 26px;
+            left: 25px;
+            background-color: silver;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .tire.right{
+            top: 200px;
+            left: 400px;
+        }
+        .truck-body{
+            width: 330px;
+            background-color: blue;
+            position: absolute;
+            top: 25px;
+            left: 190px;
+            height: 200px;
+            border: 2px solid black;
+            box-shadow: 40px 40px 6px #888888;
+        }
+        .front{
+            width: 100px;
+            height: 156px;
+            position: absolute;
+            left: 90px;
+            top: 71px;
+            background-color: blue;
+            border-radius: 30% 0 0 0;
+            border: 1px solid black;
+        }
+        .nose{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            left: 50px;
+            top: 179px;
+            background-color: black;
+            border-radius: 30% 0 0 20%;
+            z-index: -2;
+        }
+        .window{
+            width: 59px;
+            height: 40px;
+            position: absolute;
+            left: 21px;
+            top: 10px;
+            background-color: grey;
+            border-radius: 30% 0 0 0;
+            border: 2px solid black;
+            z-index: 1;
+        }
+        #infinity {
+            position: relative;
+            width: 212px;
+            height: 100px;
+        }
+        #infinity-before,
+        #infinity-after {
+            content: "";
+            position: absolute;
+            top: 37px;
+            left: 47px;
+            width: 60px;
+            height: 60px;
+            border: 20px solid red;
+            -moz-border-radius: 50px 50px 0 50px;
+            border-radius: 50px 50px 0 50px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        #infinity-after {
+            left: auto;
+            right: 60px;
+            -moz-border-radius: 50px 50px 50px 0;
+            border-radius: 50px 50px 50px 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="tire">
+    <div class="rim">
+
+    </div>
+</div>
+
+<div class="tire right">
+    <div class="rim">
+
+    </div>
+</div>
+
+<div class="truck-body">
+    <div id="infinity-before">
+    </div>
+    <div id="infinity-after"></div>
+
+</div>
+<div class="front">
+    <div class="window"></div>
+
+</div>
+
+<div class="nose">
+
+</div>
+
+</body>
+</html>
