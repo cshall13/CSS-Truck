@@ -17,8 +17,8 @@
             background-color: black;
             height: 100px;
             width: 100px;
-            z-index: 3;  
-            box-shadow: 2px 5px #888888;          
+            z-index: 3;
+            box-shadow: 2px 5px #888888;
         }
         .rim{
             position: absolute;
@@ -42,6 +42,7 @@
             left: 190px;
             height: 200px;
             border: 2px solid black;
+            background: linear-gradient(blue, yellow);
             box-shadow: 40px 40px 6px #888888;
         }
         .front{
@@ -53,16 +54,18 @@
             background-color: blue;
             border-radius: 30% 0 0 0;
             border: 1px solid black;
+            background: linear-gradient(blue, yellow);
         }
         .nose{
             width: 100px;
             height: 50px;
             position: absolute;
-            left: 50px;
+            left: 70px;
             top: 179px;
             background-color: black;
             border-radius: 30% 0 0 20%;
             z-index: -2;
+            background: linear-gradient(silver, dimgrey);
         }
         .window{
             width: 59px;
@@ -74,11 +77,13 @@
             border-radius: 30% 0 0 0;
             border: 2px solid black;
             z-index: 1;
+            background: linear-gradient(grey, white);
         }
         #infinity {
             position: relative;
             width: 212px;
             height: 100px;
+            b
         }
         #infinity-before,
         #infinity-after {
@@ -108,6 +113,7 @@
             -o-transform: rotate(45deg);
             transform: rotate(45deg);
         }
+
     </style>
 </head>
 <body>
@@ -131,8 +137,7 @@
 
 </div>
 <div class="front">
-    <div class="window"></div>
-
+    <div class="window"></div>   
 </div>
 
 <div class="nose">
